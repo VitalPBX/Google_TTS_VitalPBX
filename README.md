@@ -11,11 +11,11 @@ People looking for TTS solutions to base their projects/products on
 should look for alternative, officially supported  services.
 
 ## Requirements<br>
-Perl                    The Perl Programming Language
-perl-libwww-perl        The World-Wide Web library for Perl
-perl-LWP-Protocol-https For HTTPS support
-sox                     Sound eXchange, sound processing program
-mpg123                  MPEG Audio Player and decoder
+Perl:                    The Perl Programming Language<br>
+perl-libwww-perl:        The World-Wide Web library for Perl<br>
+perl-LWP-Protocol-https: For HTTPS support<br>
+sox:                     Sound eXchange, sound processing program<br>
+mpg123:                  MPEG Audio Player and decoder<br>
 Internet access in order to contact google and get the voice data.
 
 ## Installation<br>
