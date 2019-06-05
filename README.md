@@ -54,28 +54,28 @@ sample dialplan code for your extensions.conf
 
 ;GoogleTTS Demo
 
-exten => 1234,1,Answer()
+exten => *887,1,Answer()
   ;;Play mesage in English:
-exten => 1234,n,agi(googletts.agi,"This is a simple google text to speech test in english.",en)
+exten => *887,n,agi(googletts.agi,"This is a simple google text to speech test in english.",en)
   ;;Play message in Spanish:
-exten => 1234,n,agi(googletts.agi,"Esta es una simple prueba en español.",es)
+exten => *887,n,agi(googletts.agi,"Esta es una simple prueba en español.",es)
   ;;Play message in Greek:
-exten => 1234,n,agi(googletts.agi,"Αυτό είναι ένα απλό τέστ στα ελληνικά.",el)
+exten => *887,n,agi(googletts.agi,"Αυτό είναι ένα απλό τέστ στα ελληνικά.",el)
   ;;Play message in Japanese:
-exten => 1234,n,agi(googletts.agi,"これは、日本の簡単なテストです。良い一日を。",ja)
+exten => *887,n,agi(googletts.agi,"これは、日本の簡単なテストです。良い一日を。",ja)
   ;;Play message in simplified Chinese:
-exten => 1234,n,agi(googletts.agi,"这是一个简单的测试，在中国。有一个愉快的一天。",zh-CN)
+exten => *887,n,agi(googletts.agi,"这是一个简单的测试，在中国。有一个愉快的一天。",zh-CN)
 </pre>
 
 <pre>
 ;A simple dynamic IVR using GoogleTTS
 
-exten => 4321,1,Answer()
-exten => 4321,n,Set(TIMEOUT(digit)=5)
-exten => 4321,n,agi(googletts.agi,"Welcome to my small interactive voice response menu.",en)
+exten => *8870,1,Answer()
+exten => *8870,n,Set(TIMEOUT(digit)=5)
+exten => *8870,n,agi(googletts.agi,"Welcome to my small interactive voice response menu.",en)
     ;;Wait for digit:
-exten => 4321,n(start),agi(googletts.agi,"Please dial a digit.",en,any)
-exten => 4321,n,WaitExten()
+exten => *8870,n(start),agi(googletts.agi,"Please dial a digit.",en,any)
+exten => *8870,n,WaitExten()
 
     ;;PLayback the name of the digit and wait for another one:
 exten => _X,1,agi(googletts.agi,"You just pressed ${EXTEN}. Try another one please.",en,any)
