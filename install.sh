@@ -19,5 +19,5 @@ wget https://raw.githubusercontent.com/VitalPBX/Google_TTS_VitalPBX/master/exten
 asterisk -rx"dialplan reload"
 echo -e "\n"
 echo -e "************************************************************"
-echo -e "*               For test dial 1234 or 4321                 *"
+echo -e "*              For test dial *887 or *8870                 *"
 echo -e "************************************************************"
