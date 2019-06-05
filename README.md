@@ -49,10 +49,9 @@ can be set up by editing the script.
 sample dialplan code for your extensions.conf
 
 <pre>
+[cos-all](+)
 ;GoogleTTS Demo
 ;PLayback messages to user
-
-;GoogleTTS Demo
 
 exten => *887,1,Answer()
   ;;Play mesage in English:
@@ -65,9 +64,7 @@ exten => *887,n,agi(googletts.agi,"Αυτό είναι ένα απλό τέστ 
 exten => *887,n,agi(googletts.agi,"これは、日本の簡単なテストです。良い一日を。",ja)
   ;;Play message in simplified Chinese:
 exten => *887,n,agi(googletts.agi,"这是一个简单的测试，在中国。有一个愉快的一天。",zh-CN)
-</pre>
 
-<pre>
 ;A simple dynamic IVR using GoogleTTS
 
 exten => *8870,1,Answer()
