@@ -55,15 +55,15 @@ sample dialplan code for your extensions.conf
 
 exten => *887,1,Answer()
   ;;Play mesage in English:
-exten => *887,n,agi(googletts.agi,"This is a simple google text to speech test in english.",en)
+exten => *887,n,agi(googletts.agi,"This is a simple VitalPBX text to speech test in english, powered by Google",en)
   ;;Play message in Spanish:
-exten => *887,n,agi(googletts.agi,"Esta es una simple prueba en español.",es)
+exten => *887,n,agi(googletts.agi,"Esta es una prueba simple de texto a voz de VitalPBX en español, con tecnología de Google.",es)
   ;;Play message in Greek:
-exten => *887,n,agi(googletts.agi,"Αυτό είναι ένα απλό τέστ στα ελληνικά.",el)
+exten => *887,n,agi(googletts.agi,"Αυτό είναι ένα απλό VitalPBX κείμενο σε ομιλία στην ελληνική γλώσσα, powered by Google",el)
   ;;Play message in Japanese:
-exten => *887,n,agi(googletts.agi,"これは、日本の簡単なテストです。良い一日を。",ja)
+exten => *887,n,agi(googletts.agi,"これはグーグルによって供給された日本語のスピーチテストへの簡単なVitalPBXテキストです。",ja)
   ;;Play message in simplified Chinese:
-exten => *887,n,agi(googletts.agi,"这是一个简单的测试，在中国。有一个愉快的一天。",zh-CN)
+exten => *887,n,agi(googletts.agi,"这是一个简单的VitalPBX文本到语音测试，简体中文，由Google提供支持",zh-CN)
 
 ;A simple dynamic IVR using GoogleTTS
 
