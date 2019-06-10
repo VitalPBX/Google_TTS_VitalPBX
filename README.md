@@ -64,6 +64,7 @@ exten => *887,n,agi(googletts.agi,"Αυτό είναι ένα απλό VitalPBX 
 exten => *887,n,agi(googletts.agi,"これはグーグルによって供給された日本語のスピーチテストへの簡単なVitalPBXテキストです。",ja)
   ;;Play message in simplified Chinese:
 exten => *887,n,agi(googletts.agi,"这是一个简单的VitalPBX文本到语音测试，简体中文，由Google提供支持",zh-CN)
+exten => *887,n,Hangup()
 
 ;A simple dynamic IVR using GoogleTTS
 
