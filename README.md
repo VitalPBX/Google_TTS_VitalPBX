@@ -1,6 +1,8 @@
 Google Text to Speech (TTS) in VitalPBX
 =====
 
+[![VitalPBX Google TTS](https://img.youtube.com/vi/yjTqvFn0-PM/0.jpg)](https://www.youtube.com/watch?v=yjTqvFn0-PM)
+
 This script makes use of Google's translate text to speech service
 in order to render text to speech and play it back to the user.
 It supports a variety of different languages.
