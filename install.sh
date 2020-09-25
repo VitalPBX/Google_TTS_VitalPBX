@@ -14,7 +14,7 @@ cd /var/lib/asterisk/agi-bin/
 wget https://raw.githubusercontent.com/VitalPBX/Google_TTS_VitalPBX/master/googletts.agi
 chown asterisk:asterisk googletts.agi
 chmod +x googletts.agi
-cd /etc/asterisk/ombutel
+cd /etc/asterisk/vitalpbx
 wget https://raw.githubusercontent.com/VitalPBX/Google_TTS_VitalPBX/master/extensions__60-google_tts.conf
 asterisk -rx"dialplan reload"
 echo -e "\n"
